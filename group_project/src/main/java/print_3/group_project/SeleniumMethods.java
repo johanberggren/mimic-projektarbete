@@ -9,7 +9,7 @@ import org.openqa.selenium.*;
 public class SeleniumMethods {
 	WebDriver driver;
 	public void launchBrowser() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\johan\\Desktop\\SchoolStuff\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\johan\\Desktop\\SchoolStuff\\UpdatedChromeDriver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
@@ -29,11 +29,14 @@ public class SeleniumMethods {
 		
 		
 		Actions action = new Actions(driver);
-		action.moveToElement(element).click(element).build().perform();
+		action.moveToElement(element).click(element);
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		
-		element.sendKeys("Jimmy");
-		element.sendKeys(Keys.ENTER);
+		element.sendKeys(response);
+		
+		WebElement button = driver.findElement(By.cssSelector("#learn"));
+		button.click();
+		
 	}
 	
 	public void Unlearn() {
@@ -42,6 +45,14 @@ public class SeleniumMethods {
 
 	public void checkUnlearn(String request) {
 		driver.get("http://localhost:8080/"+request);
+	}
+	
+	public void closeBrowser() {
+		driver.close();
+	}
+	
+	public void resetState() {
+		driver.get("http://localhost:8080/resetState");
 	}
 	
 

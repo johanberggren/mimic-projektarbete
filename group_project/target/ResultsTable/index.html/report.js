@@ -44,7 +44,7 @@ formatter.match({
   "location": "Sprint3StepDefs.i_have_defined_a_response(String)"
 });
 formatter.result({
-  "duration": 555143478,
+  "duration": 435340546,
   "status": "passed"
 });
 formatter.match({
@@ -57,28 +57,28 @@ formatter.match({
   "location": "Sprint3StepDefs.i_have_defined_its_request_as(String)"
 });
 formatter.result({
-  "duration": 5148408,
+  "duration": 4596121,
   "status": "passed"
 });
 formatter.match({
   "location": "Sprint3StepDefs.i_want_mimic_to_unlearn_the_response()"
 });
 formatter.result({
-  "duration": 7021281,
+  "duration": 14094999,
   "status": "passed"
 });
 formatter.match({
   "location": "Sprint3StepDefs.the_response_has_been_forgotten()"
 });
 formatter.result({
-  "duration": 11422478,
+  "duration": 10886720,
   "status": "passed"
 });
 formatter.scenario({
   "line": 14,
-  "name": "Test mimic through Browser",
+  "name": "Test mimic unlearn through Browser",
   "description": "",
-  "id": "testing-sprint-3-mimic;test-mimic-through-browser",
+  "id": "testing-sprint-3-mimic;test-mimic-unlearn-through-browser",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -89,7 +89,7 @@ formatter.step({
 });
 formatter.step({
   "line": 17,
-  "name": "I have defined a Response \"Jimmy\"",
+  "name": "I have defined the Response \"Jimmy\"",
   "keyword": "And "
 });
 formatter.step({
@@ -112,33 +112,278 @@ formatter.match({
   "location": "Sprint3StepDefs.i_have_defined_a_Request(String)"
 });
 formatter.result({
-  "duration": 9676137047,
+  "duration": 9183461830,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "Jimmy",
-      "offset": 27
+      "offset": 29
     }
   ],
-  "location": "Sprint3StepDefs.i_have_defined_a_Response(String)"
+  "location": "Sprint3StepDefs.i_have_defined_the_Response(String)"
 });
 formatter.result({
-  "duration": 485634558,
-  "error_message": "org.openqa.selenium.WebDriverException: unknown error: call function result missing \u0027value\u0027\n  (Session info: chrome\u003d65.0.3325.181)\n  (Driver info: chromedriver\u003d2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform\u003dWindows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-VG17NKN\u0027, ip: \u002710.3.113.112\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_144\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\\Users\\johan\\AppData\\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}\nSession ID: 24a04e77f357ec30258197ecd42a5d85\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)\r\n\tat print_3.group_project.SeleniumMethods.LearnNewResponse(SeleniumMethods.java:34)\r\n\tat print_3.group_project.Sprint3StepDefs.i_have_defined_a_Response(Sprint3StepDefs.java:76)\r\n\tat ✽.And I have defined a Response \"Jimmy\"(src/main/java/print_3/group_project/Sprint3.feature:17)\r\n",
-  "status": "failed"
+  "duration": 634830663,
+  "status": "passed"
 });
 formatter.match({
   "location": "Sprint3StepDefs.i_ask_mimic_to_unlearn_previous_response_request()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 100556106,
+  "status": "passed"
 });
 formatter.match({
   "location": "Sprint3StepDefs.the_response_Request_has_been_forgotten()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 601135465,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 22,
+  "name": "I want to unlearn previous response without having to rewrite request",
+  "description": "",
+  "id": "testing-sprint-3-mimic;i-want-to-unlearn-previous-response-without-having-to-rewrite-request",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 24,
+  "name": "I have defined a response \"How are you?\"",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 25,
+  "name": "I have defined its request as \"I am great\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 26,
+  "name": "I want to unlearn without rewriting the request",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 27,
+  "name": "Mimic forgets it",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "How are you?",
+      "offset": 27
+    }
+  ],
+  "location": "Sprint3StepDefs.i_have_defined_a_response(String)"
+});
+formatter.result({
+  "duration": 17195557,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "I am great",
+      "offset": 31
+    }
+  ],
+  "location": "Sprint3StepDefs.i_have_defined_its_request_as(String)"
+});
+formatter.result({
+  "duration": 6391481,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Sprint3StepDefs.i_want_to_unlearn_without_rewriting_the_request()"
+});
+formatter.result({
+  "duration": 17422969,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Sprint3StepDefs.mimic_forgets_it()"
+});
+formatter.result({
+  "duration": 19111748,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 30,
+  "name": "I want to unlearn all responses previously defined so I can rerun tests",
+  "description": "",
+  "id": "testing-sprint-3-mimic;i-want-to-unlearn-all-responses-previously-defined-so-i-can-rerun-tests",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 32,
+  "name": "I have defined multiple Request/Responses",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 33,
+  "name": "I want mimic to unlearn everything",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 34,
+  "name": "I can rerun all of the tests",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Sprint3StepDefs.i_have_defined_multiple_Request_Responses()"
+});
+formatter.result({
+  "duration": 20707622,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Sprint3StepDefs.i_want_mimic_to_unlearn_everything()"
+});
+formatter.result({
+  "duration": 10575524,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Sprint3StepDefs.i_can_rerun_all_of_the_tests()"
+});
+formatter.result({
+  "duration": 11563826,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 39,
+  "name": "I want to reset the state of mimic",
+  "description": "",
+  "id": "testing-sprint-3-mimic;i-want-to-reset-the-state-of-mimic",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 41,
+  "name": "I have defined the response \"Father\" with LearnNextResponse",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 42,
+  "name": "I want to reset the state back to normal",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 43,
+  "name": "I try and define a request",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 44,
+  "name": "It will not apply to the previously defined response",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Father",
+      "offset": 29
+    }
+  ],
+  "location": "Sprint3StepDefs.i_have_defined_the_response_with_LearnNextResponse(String)"
+});
+formatter.result({
+  "duration": 10337853,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Sprint3StepDefs.i_want_to_reset_the_state_back_to_normal()"
+});
+formatter.result({
+  "duration": 7484085,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Sprint3StepDefs.i_try_and_define_a_request()"
+});
+formatter.result({
+  "duration": 9128977,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Sprint3StepDefs.it_will_not_apply_to_the_previously_defined_response()"
+});
+formatter.result({
+  "duration": 6557338,
+  "error_message": "java.lang.Exception\r\n\tat print_3.group_project.Sprint3StepDefs.it_will_not_apply_to_the_previously_defined_response(Sprint3StepDefs.java:182)\r\n\tat ✽.Then It will not apply to the previously defined response(src/main/java/print_3/group_project/Sprint3.feature:44)\r\n",
+  "status": "failed"
+});
+formatter.scenario({
+  "line": 46,
+  "name": "I want to reset the state after completing a full request/response definition",
+  "description": "",
+  "id": "testing-sprint-3-mimic;i-want-to-reset-the-state-after-completing-a-full-request/response-definition",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 48,
+  "name": "I have defined a Request \"How are you?\"",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 49,
+  "name": "I have defined the Response \"Terrible\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 50,
+  "name": "I reset the state",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 51,
+  "name": "I can rerun a complete test scenario",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "How are you?",
+      "offset": 26
+    }
+  ],
+  "location": "Sprint3StepDefs.i_have_defined_a_Request(String)"
+});
+formatter.result({
+  "duration": 5452843309,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Terrible",
+      "offset": 29
+    }
+  ],
+  "location": "Sprint3StepDefs.i_have_defined_the_Response(String)"
+});
+formatter.result({
+  "duration": 474441771,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Sprint3StepDefs.i_reset_the_state()"
+});
+formatter.result({
+  "duration": 104053923,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Sprint3StepDefs.i_can_rerun_a_complete_test_scenario()"
+});
+formatter.result({
+  "duration": 523478461,
+  "error_message": "java.lang.Exception\r\n\tat print_3.group_project.Sprint3StepDefs.i_can_rerun_a_complete_test_scenario(Sprint3StepDefs.java:203)\r\n\tat ✽.Then I can rerun a complete test scenario(src/main/java/print_3/group_project/Sprint3.feature:51)\r\n",
+  "status": "failed"
 });
 });
